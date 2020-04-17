@@ -1,6 +1,7 @@
 package com.jhonatasalves.workshopmongo.resources.exception;
 
 import java.io.Serializable;
+import java.text.SimpleDateFormat;
 
 public class StandardError implements Serializable {
 	
