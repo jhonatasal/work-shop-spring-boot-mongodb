@@ -1,9 +1,16 @@
 package com.jhonatasalves.workshopmongo.dto;
 
 import java.io.Serializable;
+import java.util.Date;
+import java.util.List;
 
 import com.jhonatasalves.workshopmongo.domain.User;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class AuthorDTO implements Serializable {
 
 	private static final long serialVersionUID = 1L;
@@ -18,22 +25,6 @@ public class AuthorDTO implements Serializable {
 	public AuthorDTO(User obj) {
 		this.id = obj.getId();
 		this.name = obj.getName();
-	}
-
-	public String getId() {
-		return id;
-	}
-
-	public void setId(String id) {
-		this.id = id;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
 	}
 
 }
